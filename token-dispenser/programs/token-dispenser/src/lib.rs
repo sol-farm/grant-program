@@ -72,7 +72,11 @@ mod tests;
 
 mod ecosystems;
 
+#[cfg(not(feature = "mainnet"))]
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+#[cfg(feature = "mainnet")]
+declare_id!("EXxqB6XPLczReFcZyigfbdowB6WGYtnkLYC4XZ2ae9ch");
+
 
 const CONFIG_SEED: &[u8] = b"config";
 const RECEIPT_SEED: &[u8] = b"receipt";
