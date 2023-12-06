@@ -70,7 +70,7 @@ use {
 #[cfg(test)]
 mod tests;
 
-mod ecosystems;
+pub mod ecosystems;
 
 #[cfg(not(feature = "mainnet"))]
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
